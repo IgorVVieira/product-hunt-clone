@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const requireDir = require('require-dir');
 
+const cors = require('cors');
+
 // Conetando com banco de dados
 mongoose.connect('mongodb://localhost:27017/nodeapi', {
     useUnifiedTopology: true,
@@ -14,6 +16,7 @@ const app = express();
 const routes = require('./src/routes');
 const port = 3000;
 
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
