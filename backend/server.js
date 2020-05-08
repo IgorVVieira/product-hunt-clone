@@ -14,7 +14,7 @@ requireDir('./src/models');
 const express = require('express');
 const app = express();
 const routes = require('./src/routes');
-const port = 3000;
+const port = 3001;
 
 app.use(cors());
 app.use(express.json());
