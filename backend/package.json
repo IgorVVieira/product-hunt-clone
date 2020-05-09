@@ -1,7 +1,7 @@
 {
   "name": "product_hunt",
   "version": "1.0.0",
-  "description": "",
+  "description": "API que fornece produtos cadastrados em MongoDB",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
