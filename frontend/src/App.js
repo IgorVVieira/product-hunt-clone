@@ -1,7 +1,7 @@
 import React from 'react';
 import Routes from './routes';
 
-import './styles.css'
+import './global.css'
 
 import Header from './components/Header';
 
