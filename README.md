@@ -8,11 +8,11 @@ A simple clone to product hunt using Node, React.Js and MongoDB.
 > open the project
 > Ctrl + '
 > cd backend
-> npm install
+> yarn
 > npm start
 > split the terminal
 > cd frontend
-> yarn install
+> yarn 
 > yarn start
 ```
 
