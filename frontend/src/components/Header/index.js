@@ -5,7 +5,7 @@ import './style.css';
 const Header = () => {
     return (
         <header id="main-header">
-            JSHunt
+            FullStack Hunt
         </header>
     );
 }
