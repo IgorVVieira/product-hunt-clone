@@ -1,25 +1,18 @@
-const mongoose = require('mongoose');
-const monoogosePaginate = require('mongoose-paginate');
+const { Model, DataTypes } = require('sequelize');
+const sequelizePaginate = require('sequelize-paginate');
 
-const ProductSchema = new mongoose.Schema({
-    title: {
-        type: String,
-        required: true,
-    },
-    description: {
-        type: String,
-        required: true,
-    },
-    url: {
-        type: String,
-        required: true,
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-    },
-});
+class Product extends Model {
+    static init(sequelize) {
+        super.init({
+            title: DataTypes.STRING,
+            description: DataTypes.STRING,
+            url: DataTypes.STRING,
+        }, {
+            sequelize
+        });
+    }
+}
 
-ProductSchema.plugin(monoogosePaginate);
+sequelizePaginate.paginate(Product);
 
-mongoose.model('Product', ProductSchema);
+module.exports = Product;

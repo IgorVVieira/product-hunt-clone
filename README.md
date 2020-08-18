@@ -1,25 +1,36 @@
 # product-hunt-clone 🎯
-A simple clone to product hunt using Node, React.Js and MongoDB.
+A simple clone to product hunt using Node, React.Js and PostgreSQL.
 
-**Key words:** JavaScript, Node.js, MongoDB, React.JS, Mongoose.
+**Key words:** JavaScript, Node.js, PostgreSQL, React.JS, Mongoose.
+
+**Note:** Don't forget to change the database credentials in the config folder
+
 
 ## How to Execute 🤔
+ - API
 ```
 > open the project
 > Ctrl + '
 > cd backend
-> yarn
-> npm start
-> split the terminal
-> cd frontend
-> yarn 
-> yarn start
 ```
+- > yarn
+- > yarn sequelize db:create
+- > yarn sequelize db:migrate
+- > yarn dev
+
+ - WEB
+```
+> open the project
+> Ctrl + '
+> cd frontend
+```
+- > yarn
+- > yarn start
 
 ## Made with
 * [Visual Studio Code](https://code.visualstudio.com/) - Code editor.
 * [Node.js](https://nodejs.org/en/).
-* [MongoDB](https://www.mongodb.com/) - Database.
+* [PostgreSQL](https://www.mongodb.com/) - Database.
 
 ## Versions
 VERSION 1.0

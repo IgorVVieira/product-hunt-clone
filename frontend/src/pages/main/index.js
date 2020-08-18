@@ -56,10 +56,10 @@ class Main extends Component {
         return (
             <div className="product-list">
                 {products.map(product => (
-                    <article key={product._id}>
+                    <article key={product.id}>
                         <strong>{product.title}</strong>
                         <p>{product.description}</p>
-                        <Link to={`products/${product._id}`}>Acessar</Link>
+                        <Link to={`products/${product.id}`}>Acessar</Link>
                     </article>
                 ))}
                 <div className="actions">
