@@ -20,8 +20,7 @@ A simple clone to product hunt using Node, React.Js and PostgreSQL.
 
  - WEB
 ```
-> open the project
-> Ctrl + '
+> split the terminal
 > cd frontend
 ```
 - > yarn
